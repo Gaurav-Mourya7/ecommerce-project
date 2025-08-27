@@ -7,7 +7,7 @@ import com.halo.ecommerce.Entity.User;
 
 public interface CartService {
 
-    public CartItem addCartItem(User user, Product product,String size,int quantity) throws IllegalAccessException;
-    public Cart findUserCart(User user) throws IllegalAccessException;
+    CartItem addCartItem(User user, Product product, String size, int quantity) throws IllegalAccessException;
+    Cart findUserCart(User user) throws IllegalAccessException;
 
 }

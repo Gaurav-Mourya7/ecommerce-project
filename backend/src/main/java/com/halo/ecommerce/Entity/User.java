@@ -30,9 +30,9 @@ public class User {
     private USER_ROLE role = USER_ROLE.ROLE_CUSTOMER;
 
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL,orphanRemoval = true)
-    private Set<Address> addresses = new HashSet<>();
+    private final Set<Address> addresses = new HashSet<>();
 
     @ManyToMany
     @JsonIgnore
-    private Set<Coupon> usedCoupons = new HashSet<>();
+    private final Set<Coupon> usedCoupons = new HashSet<>();
 }

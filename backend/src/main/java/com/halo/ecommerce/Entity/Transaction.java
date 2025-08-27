@@ -22,6 +22,6 @@ public class Transaction {
     @ManyToOne
     private Seller seller;
 
-    private LocalDateTime date = LocalDateTime.now();
+    private final LocalDateTime date = LocalDateTime.now();
 
 }

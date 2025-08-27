@@ -24,13 +24,13 @@ public class Order {
     private Long sellerId;
 
     @OneToMany(mappedBy = "order",cascade = CascadeType.ALL,orphanRemoval = true)
-    private List<OrderItem> orderItems =new ArrayList<>();
+    private final List<OrderItem> orderItems =new ArrayList<>();
 
     @ManyToOne
     private Address shippingAddress;
 
     @Embedded
-    private PaymentDetails paymentDetails = new PaymentDetails();
+    private  PaymentDetails paymentDetails = new PaymentDetails();
 
     private double totalMrpPrice;
 
@@ -42,11 +42,11 @@ public class Order {
 
     private int totalItem;
 
-    private PaymentStatus paymentStatus = PaymentStatus.PENDING;
+    private  PaymentStatus paymentStatus = PaymentStatus.PENDING;
 
-    private LocalDateTime orderDate = LocalDateTime.now();
+    private  LocalDateTime orderDate = LocalDateTime.now();
 
-    private LocalDateTime deliverDate = orderDate.plusDays(7);
+    private  LocalDateTime deliverDate = orderDate.plusDays(7);
 
 
 

@@ -23,7 +23,6 @@ public class HomeServiceImpl implements HomeService {
 
     @Override
     public Home createHomePageData(List<HomeCategory> allCategories) {
-        ;
 
         List<HomeCategory> gridCategories = allCategories.stream()
                 .filter(category -> category.getSection() == HomeCategorySection.GRID)

@@ -29,9 +29,9 @@ public class PaymentServiceImpl implements PaymentService {
     private final PaymentOrderRepository paymentOrderRepository;
     private final OrderRepository orderRepository;
 
-    private String apiKey = "apikey";
-    private String apiSecret = "apisecret";
-    private String stripeSecretKey = "stripesecretkey";
+    private final String apiKey = "apikey";
+    private final String apiSecret = "apisecret";
+    private final String stripeSecretKey = "stripesecretkey";
 
     @Override
     public PaymentOrder createOrder(User user, Set<Order> orders) {

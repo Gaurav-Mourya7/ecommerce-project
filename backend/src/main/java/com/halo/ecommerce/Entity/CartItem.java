@@ -21,7 +21,7 @@ public class CartItem {
 
     private String size;
 
-    private int quantity=1;
+    private  int quantity=1;
 
     private int mrpPrice;
 

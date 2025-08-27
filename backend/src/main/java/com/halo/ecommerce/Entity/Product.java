@@ -31,7 +31,7 @@ public class Product {
     private int discountPercent;
 
     @ElementCollection
-    private List<String> images = new ArrayList<>();
+    private  List<String> images = new ArrayList<>();
 
     private int numRatings;
 

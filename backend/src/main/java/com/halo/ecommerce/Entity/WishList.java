@@ -18,5 +18,5 @@ public class WishList {
     private User user;
 
     @ManyToMany
-    private Set<Product> products = new HashSet<>();
+    private final Set<Product> products = new HashSet<>();
 }

@@ -11,12 +11,12 @@ import java.util.List;
 
 public interface ProductService {
 
-    public Product createProduct(CreateProductRequest createProductRequest, Seller seller) throws IllegalAccessException;
-    public void deleteProduct(Long productId) throws ProductException;
-    public Product updateProduct(Long productId, Product product) throws ProductException;
+    Product createProduct(CreateProductRequest createProductRequest, Seller seller) throws IllegalAccessException;
+    void deleteProduct(Long productId) throws ProductException;
+    Product updateProduct(Long productId, Product product) throws ProductException;
     Product findProductById(Long productId) throws ProductException;
     List<Product> searchProducts(String query);
-    public Page<Product> getAllProducts(
+    Page<Product> getAllProducts(
             String category,
             String brand,
             String colors,
